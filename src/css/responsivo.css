@@ -1,0 +1,103 @@
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header img {
+    margin-bottom: 20px;
+  }
+
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+  }
+
+  .introducao h1::before {
+    width: 32px;
+    height: 10px;
+    left: 0px;
+  }
+
+  .introducao img {
+    max-width: 200px;
+  }
+
+  .projetos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+    max-width: initial;
+  }
+
+  .descricao {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .projeto-texto {
+    font-size: 1rem;
+  }
+
+  .formacao-container {
+    padding: 60px 20px 120px 20px;
+  }
+
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+
+  .footer li, .footer a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao img {
+    max-width: 200px;
+  }
+
+  .projeto {
+    display: flex; /* Switch to Flexbox */
+    flex-direction: column;
+  }
+  .projeto-habilidades {
+    order: 2;
+    grid-area: unset; /* Remove grid-area */
+    order: 1; /* Optional: Show before links */
+    justify-content: start;
+  }
+
+  .projeto span {
+    order: 1;
+  }
+
+  .cursos-lista {
+    justify-content: center;
+  }
+}
