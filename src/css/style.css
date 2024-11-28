@@ -1,6 +1,7 @@
 body {
   font-family: "Orbitron", sans-serif;
   color: #010912;
+  box-sizing: border-box;
 }
 
 a {
@@ -38,15 +39,25 @@ img {
 }
 
 .menu a {
-  display: block;
+  display: inline-block;
   font-size: 1.25rem;
   padding: 10px 20px;
-  border-bottom: 1px solid transparent;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #010912;
+  margin-top: 4px;
+  position: absolute;
   transition: 0.3s;
 }
 
-.menu a:hover {
-  border-bottom: 1px solid #010912;
+.menu a:hover::after {
+  width: 100%;
 }
 
 
